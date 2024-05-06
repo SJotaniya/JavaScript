@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label>Product Quantity</label>
+    <input type="text" id="in1"><br>
+
+    <h1>Price</h1>
+
+    <h1 id="ans">Amount</h1>
+</body>
+</html>
+
+<script>
+    let quantity = document.getElementById("in1").value
+    let price = 25
+
+    let amt
+
+    amt = quantity * price
+
+    document.getElementById("ans").innerHTML = amt
+
+</script>

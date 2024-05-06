@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed</title>
+</head>
+<body>
+    
+    <label>Travel Kilometers </label>
+    <input type="text" id="in1">
+
+    <br><br>
+    <label>Time to Travel in second</label>
+    <input type="text" id="in2">
+
+    <h1 id="ans">Ans</h1>
+
+</body>
+</html>
+
+<script>
+    var km = document.getElementById("in1").value
+    var t = document.getElementById("in2").value
+
+    var speed = +km / +t
+
+    document.getElementById("ans").innerHTML = speed
+</script>

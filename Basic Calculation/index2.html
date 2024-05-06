@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+<body>
+
+    <label>Enter Height : </label>
+    <input type="text" id="in1">
+
+    <br><br>
+
+    <label>Enter Weight : </label>
+    <input type="text" id="in2">
+
+    <h1 id="ans">BMI = </h1>
+
+</body>
+</html>
+
+<script>
+    let h = document.getElementById("in1").value
+    let w = document.getElementById("in2").value
+
+    let BMI= +w / (+h * +h)
+
+    document.getElementById("ans").innerHTML = BMI
+</script>
