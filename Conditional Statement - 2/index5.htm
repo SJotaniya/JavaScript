@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+</head>
+
+<body>
+    <center>
+        <label for="">Enter The Numbers :- </label>
+        <br>
+        <input type="text" id="in1">
+        <p id="b1"></p>
+    </center>
+</body>
+</html>
+
+<script>
+    let b = document.getElementById("in1").value
+
+    if(b === "")
+    {
+        document.getElementById("b1").innerHTML = "Enter Valid Numbers :-"
+    }
+
+    else{
+        if(b>=90 && b<=100)
+        {
+            document.getElementById("b1").innerHTML = "A GRADE"
+        }
+        else if(b>=80 && b<=89)
+        {   
+            document.getElementById("b1").innerHTML = "b GRADE"
+        }
+
+        else if(b>=70 && b<=79)
+        {
+            document.getElementById("b1").innerHTML = "c GRADE"
+        }
+
+        else if(b>=60 && b<=69)
+        {   
+            document.getElementById("b1").innerHTML = "d GRADE"
+        }
+
+        else
+        {
+            document.getElementById("b1").innerHTML = "FAILE"
+        }
+    }
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+</head>
+<body>
+    <h1>Enter Paswoord</h1>
+    <input type="text" id="in1">
+
+    <p id="err"></p>
+</body>
+</html>
+
+<script>
+    let storepass = "1811@kart"
+
+    let enterpass = document.getElementById("in1").value
+
+    if(enterpass === "")
+    {
+        document.getElementById("err").innerHTML = "Enter Valid Numbers :- "
+    }
+    
+    else{
+        if(storepass === enterpass)
+        {
+            document.getElementById("err").innerHTML = "Loged in"
+        }
+
+        else{
+            document.getElementById("err").innerHTML = "Invalid Paswored"
+        }
+    }
+</script>
