@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> Enter the Paswoord</h1>
+
+    <input type="text" id="a1">
+
+    <h3 id="err"></h3>
+    </center>
+</body>
+</html>
+
+<script>
+    let storepasdss = "Kartik1811"
+
+    let enterpass = document.getElementById("a1").value
+
+    if(enterpass === "")    
+    {
+        document.getElementById("err").innerHTML = "Enter The Valid Paword"
+    }
+
+    else{
+        if(storepasdss === enterpass) {
+            document.getElementById("err").innerHTML = "Login Sucessfull"
+        }
+
+        else{
+            document.getElementById("err").innerHTML = "Incorect Login"
+        }
+    }
+</script>
