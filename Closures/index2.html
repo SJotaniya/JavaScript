@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet</title>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <input type="text" id="nm">
+
+    <h1 id="greet"></h1>
+</body>
+</html>
+
+<script>
+    var name = document.getElementById("nm").value
+
+    greet=(name)=>{
+        document.write("Welcome to Our Office.<br>")
+        greet2=()=>{
+            document.write("Hello, "+name)
+        }
+        greet2()
+    }
+    greet(name)
+</script>

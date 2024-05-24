@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+    <h1>Enter Factor</h1>
+    <input type="text" id="fact">
+
+    <h1>Enter Number</h1>
+    <input type="text" id="num">
+
+    <h1 id="prdt"></h1>
+</body>
+</html>
+
+<script>
+    var a = document.getElementById("fact").value
+    var b = document.getElementById("num").value
+
+    multiplier=(factor)=>{
+        multiplier2=(number)=>{
+            document.getElementById("prdt").innerHTML = factor * number
+        }
+        multiplier2(b)
+    }
+    multiplier(a)
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+</head>
+<body>
+    <h1>Enter Principal</h1>
+    <input type="text" name="p" id="principal">
+
+    <h1>Enter Rate of Interest</h1>
+    <input type="text" name="r" id="rate">
+
+    <h1>Enter Time Period</h1>
+    <input type="text" name="t" id="time">
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+
+var p = document.getElementById("principal").value
+var r = document.getElementById("rate").value
+var n = document.getElementById("time").value
+
+
+calculateSimpleInterest=(principal, rate, time)=> {
+
+    rate = rate / 100;
+
+    const simpleInterest = principal * rate * time;
+
+    return simpleInterest;
+}
+
+calculateSimpleInterest(p,r,n)
+
+
+</script>

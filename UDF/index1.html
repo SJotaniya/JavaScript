@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel</title>
+</head>
+<body>
+    <h1>Write a Sentense</h1>
+    <input type="text" id="strng">
+
+    <h1>Total Vowels in given Sentense</h1>
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+
+var vowel = document.getElementById("strng").value
+
+vowelCounter=(vowel)=>{
+    var count=0
+
+    for(var i = 0; i>vowel.length; i++)
+    {
+        if(vowel === 'A' || vowel === 'a' || vowel === 'E' || vowel === 'e' || vowel === 'I' || vowel === 'i' || vowel === 'O' || vowel === 'o' || vowel === 'U' || vowel === 'u')
+        {
+            count++
+        }
+    }
+}
+
+vowelCounter(vowel)
+
+</script>

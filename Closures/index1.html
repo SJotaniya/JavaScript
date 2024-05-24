@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of 3 Digits</title>
+</head>
+<body>
+    <h1>Enter First Element</h1>
+    <input type="text" name="a" id="inp1">
+
+    <h1>Enter First Element</h1>
+    <input type="text" name="b" id="inp2">
+
+    <h1>Enter First Element</h1>
+    <input type="text" name="c" id="inp3">
+
+    <h1 id="sum"></h1>
+</body>
+</html>
+
+<script>
+    var a = document.getElementById("inp1").value 
+    var b = document.getElementById("inp2").value
+    var c = document.getElementById("inp3").value
+    
+    first=(a)=>{
+        second=(b)=>{
+            third=(c)=>{
+                document.getElementById("sum").innerHTML = +a + +b + +c
+            }
+            third(c)
+        }
+        second(b)
+    }
+    first(a)
+</script>
