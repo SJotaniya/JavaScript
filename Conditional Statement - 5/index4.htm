@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language</title>
+</head>
+<body>
+    <h1>Enter Your Language</h1>
+    <h3>English, Spanish, French</h3>
+    <input type="text" id="lang"><br><br>
+</body>
+</html>
+
+<script>
+let selectedLanguage = document.getElementById("lang").value
+
+switch (selectedLanguage) {
+  case "English":
+    document.write("Hello!");
+    break;
+  case "Spanish":
+    document.write("¡Hola!");
+    break;
+  case "French":
+    document.write("Bonjour!");
+    break;
+  default:
+    document.write("Language not supported.");
+}
+</script>

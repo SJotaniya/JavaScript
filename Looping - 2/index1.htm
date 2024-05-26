@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Digits</title>
+</head>
+<body>
+    <h1>Enter number</h1>
+    <input type="text" id="in1">
+
+    <h1 id="ans"></h1>
+</body>
+</html>
+
+<script>
+    let num = document.getElementById("in1").value
+    let a= 0
+
+    do
+    {  
+        a++
+        num = Math.floor(num/10)
+    }while(num > 0)
+
+    document.getElementById("ans").innerHTML = a
+</script>

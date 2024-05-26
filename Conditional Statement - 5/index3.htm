@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal</title>
+</head>
+<body>
+    <h1>Enter Traffic Signal Light Color</h1>
+    <input type="text" id="color">
+</body>
+</html>
+
+<script>
+    let lightColor = document.getElementById("color").value
+
+    switch(lightColor) 
+    {
+        case "red":
+            document.write("Stop!");
+            break;
+        case "yellow":
+            document.write("Slow down!");
+            break;
+        case "green":
+            document.write("Go.");
+            break;
+        default:
+            document.write("Invalid light color");
+    }
+
+</script>

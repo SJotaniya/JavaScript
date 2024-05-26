@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Number</title>
+</head>
+<body>
+
+    <h1>Enter number</h1>
+    <input type="text" id="in1">
+
+</body>
+</html>
+
+<script>
+    num = document.getElementById("in1").value
+
+    if (num === "")
+    {
+        document.getElementById("ans").innerHTML = ""
+    } 
+    else
+    {
+        if(num %2 != 0)
+        {
+            document.write("Odd number")
+        }
+        else
+        {
+            document.write("Not odd number")
+        }
+    }
+</script>

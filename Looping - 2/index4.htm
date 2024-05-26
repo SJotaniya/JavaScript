@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Power</title>
 </head>
 <body>
-    <h1 id="ans"></h1>
+    <h1>Enter the Number</h1>
+    <input type="text" id="num">
 </body>
 </html>
 
 <script>
+    let a=10
+    let b=2
+    let i=1
 
-    let name = "Hello World"
-
-    for(let i=1 ; i<=10; i++)
+    do
     {
-        document.getElementById("ans").innerHTML += name+"<br>" 
-    }
+        a *=a
+        i++
+    }while(i<b)
 
+    console.log(a)
 </script>

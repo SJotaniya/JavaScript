@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Enter First Number</h1>
+    <input type="text" id="in1">
+
+    <h1>Enter Second Number</h1>
+    <input type="text" id="in2">
+
+</body>
+</html>
+
+<script>
+    let number1 = 10;
+    let number2 = 5;
+    let operator = "*";
+
+    switch (operator) 
+    {
+      case "+":
+        document.write(number1 + number2);
+        break;
+      case "-":
+        document.write(number1 - number2);
+        break;
+      case "*":
+        document.write(number1 * number2);
+        break;
+      case "/":
+        document.write(number1 / number2)
+        break;
+      default:
+        console.log("Invalid operator");
+    }
+
+</script>

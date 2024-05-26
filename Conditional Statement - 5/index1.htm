@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Day</title>
 </head>
 <body>
-    
+    <h1>Enter the Day</h1>
+    <input type="text" id="day">
 </body>
 </html>
+
+<script>
+    let day =  document.getElementById("day").value
+
+    switch(day) 
+    {
+        case "Monday":
+            document.write("It's the start of the workweek.");
+            break;
+        case "Friday":
+            document.write("It's almost the weekend!");
+            break;
+        default:
+            document.write("It's some other day.");
+    }
+</script>
