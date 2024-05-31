@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Enter first name</h1>
+    <input type="text" id="in1">
+
+
+    <h1>Enter last name</h1>
+    <input type="text" id="in2">
+
+    <h1 id="ans"></h1>
+
+</body>
+</html>
+
+<script>
+
+    let first = document.getElementById("in1").value
+    let second = document.getElementById("in2").value
+
+    pass = (first,second) =>{
+        let ans = first + second 
+
+       return ans
+    }
+
+    document.getElementById("ans").innerHTML = pass(first,second)
+</script>
