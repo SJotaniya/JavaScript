@@ -1,5 +1,3 @@
-<!-- Concate 2 strings. -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,11 +14,11 @@
 
 <script>
 
-    let a = "Rutul"
-    let b = "Kakadiya"
+    let arr = [70,80,90,101,200,150]
 
-    let c= a.concat(b)
-
-    console.log(c)
+    let ans = arr.some((temp)=>{
+        return temp > 100
+    })
+    console.log(ans)
 
 </script>

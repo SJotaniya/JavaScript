@@ -1,3 +1,5 @@
+<!-- Given an array of numbers `[1, 2, 3, 4, 5]`, use a loop and the `pop()` method to remove elements . -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,17 +10,21 @@
 </head>
 
 <body>
-    
+
 </body>
 </html>
 
 <script>
-    let arr = [1,2,3,19]
 
-    let ans = arr.filter((age)=>{
-        
-        return age > 18
-    })
+    let arr = []
 
-    console.log(ans)
-</script> 
+    for (let i = 1; i <= 5; i++) {
+        arr.push(i)
+    }
+
+    console.log(arr)
+    arr.pop()
+
+    console.log(arr)
+
+</script>

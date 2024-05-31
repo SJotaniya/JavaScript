@@ -1,3 +1,5 @@
+<!-- Create an array of animals `['lion', 'tiger', 'elephant']`.Add 'giraffe' and 'zebra' to the beginning of the array using the `unshift()` method. Return the modified array. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,17 +10,16 @@
 </head>
 
 <body>
-    
+
 </body>
 </html>
 
 <script>
+    let arr = ['lion', 'tiger', 'elephant']
 
-    let arr= ['Red','Yellow','Green']
+    console.log(arr)
 
-    function check(color){
-        console.log(color.includes('Green'))
-    }
-    console.log(check(arr))
-
+    arr.unshift('giraffe','zebra')
+    
+    console.log(arr)
 </script>

@@ -1,3 +1,5 @@
+<!-- Given an array of characters `['a', 'b', 'c', 'd', 'e']`, use a loop and the `pop()` method. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,12 +15,15 @@
 </html>
 
 <script>
+    let array = [];
 
-    let arr = [70,80,90]
+    for (let i = 0; i <= 5; i++) {
+        array.push(String.fromCharCode(97 + i));
+    }
 
-    let ans = arr.every((mark)=>{
-        return mark > 60
-    })
-    console.log(ans)
+    console.log("Array after adding 'a' to 'f':", array);
 
+    array.pop();
+
+    console.log("Array after removing 'f':", array);
 </script>
