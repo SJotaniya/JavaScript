@@ -1,0 +1,7 @@
+HOF 
+
+map()
+reduce()
+filter()
+sort()
+
