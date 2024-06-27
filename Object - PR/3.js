@@ -1,19 +1,19 @@
 let book = [
     {title: "Rich Dad Poor Dad",
-     author : "Vyasa",
-     price : 50 , 
+     author : "Robert Kiyosaki",
+     price : 50, 
      quantityAvailable : "Yes",   
     },
 
     {title: "The Phycology of Money",
-     author : "Vyasa",
-     price : 100 , 
+     author : "Morgan Housel",
+     price : 100, 
      quantityAvailable : "No",   
     },
 
-    {title: "",
-     author : "Valmiki",
-     price : 30 , 
+    {title: "Half Girlfriend",
+     author : "Chetan Bhagat",
+     price : 30,
      quantityAvailable : "Yes",   
     }
 ]

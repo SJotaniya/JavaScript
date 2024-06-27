@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Enter first number</h1>
+    <input type="text" id="in1">
+    <br><br>
+
+    <h1>Enter second number</h1>
+    <input type="text" id="in2">
+    <br><br><br>
+
+    <h1 id="ans">Answer </h1>
+    <br>
+
+    <button onclick="add()" id="btn1">Addition</button>
+    <button onclick="sub()" id="btn1">Substraction</button>
+    <button onclick="mul()" id="btn1">Multiplication</button>
+    <button onclick="div()" id="btn1">Division</button>
+
+</body>
+
+</html>
+
+<script>
+
+    function add()
+    {
+        let first = document.getElementById("in1").value
+        let second = document.getElementById("in2").value
+        document.getElementById("ans").innerHTML = +first + +second
+    }
+
+    function sub()
+    {
+        let first = document.getElementById("in1").value
+        let second = document.getElementById("in2").value
+        document.getElementById("ans").innerHTML = +first - +second
+    }
+
+    function mul()
+    {
+        let first = document.getElementById("in1").value
+        let second = document.getElementById("in2").value
+        document.getElementById("ans").innerHTML = +first * +second
+    }
+
+    function div() 
+    {
+        let first = document.getElementById("in1").value
+        let second = document.getElementById("in2").value
+        document.getElementById("ans").innerHTML = +first / +second
+    }
+
+</script>
