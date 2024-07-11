@@ -8,65 +8,69 @@
 </head>
 <body>
     <form action="" id="signup">
-<label for="">Username</label>
-<input type="text" id="name">
+        <label for="">Username</label>
+        <input type="text" id="name">
 
-<label for="">Email</label>
-<input type="text" id="email">
+        <label for="">Email</label>
+        <input type="text" id="email">
 
-<label for="">Password</label>
-<input type="text" id="pw">
+        <label for="">Password</label>
+        <input type="text" id="pw">
 
-<label for="">Phone</label>
-<input type="text" id="phn">
+        <label for="">Phone</label>
+        <input type="text" id="phn">
 
-<input type="submit">
+        <input type="submit">
 
-<span id="err"></span>
-
+        <span id="err"></span>
     </form>
 </body>
 </html>
 
 <script>
 
-$(document).ready(function(){
-$("#signup").submit(function(event){
-event.preventDefault()
-$("#err").text("")
-
-    let name = $("#name").val()
-    if(name === ""){
-        $("#err").text("Please enter name")
-    }
-
-
-    let email = $("#email").val()
-    if(email === ""){
-        $("#err").text("Enter email")
-    } else if(!email.endsWith("@gmail.com")){
-         $("#err").text("Enter valid email")
-    }else {
+$(document).ready(function()
+{
+    $("#signup").submit(function(event)
+    {
+        event.preventDefault();
         $("#err").text("")
-    }
 
+        let name = $("#name").val();
+        let email = $("#email").val();
+        let pw = $("#pw").val();
+        let pwRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
-    let pw = $("#pw").val()
-    let pwRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/
+        if(name === "")
+        {
+            $("#err").text("Please enter name")
+        }
 
-if(pw === ""){
-    $("#err").text("Enter password")
-}else if(!pwRegex.test(pw)){
-    $("#err").text("Enter valid password")
-}else {
-    $("#err").text("") 
-}
+        if(email === "")
+        {
+            $("#err").text("Enter email")
+        } 
+        else if(!email.endsWith("@gmail.com"))
+        {
+            $("#err").text("Enter valid email")
+        }
+        else
+        {
+            $("#err").text("")
+        }
 
+        if(pw === "")
+        {
+            $("#err").text("Enter password")
+        }
+        else if(!pwRegex.test(pw))
+        {
+            $("#err").text("Enter valid password")
+        }
+        else
+        {
+            $("#err").text("") 
+        }
+    })
 })
-
-
-})
-
-
-
 </script>

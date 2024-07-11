@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+    }
+    .div2 {
+        height: 100px;
+        width: 100px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+</style>
+
+<body style="display: flex; justify-content: center; align-items: center;">
+
+    <div class="box" id="box1">
+
+        <center>
+            <h1>Birthday Countdown</h1>
+        </center>
+
+
+        <div class="div1" style="display: flex;">
+            <div class="div2">
+                <h1 id="time1"></h1>
+            </div>
+
+            <div class="div2" style="margin-left: 30px;">
+                <h1 id="time2"></h1>
+            </div>
+
+            <div class="div2" style="margin-left: 30px;">
+                <h1 id="time3"></h1>
+            </div>
+        </div>
+    </div>
+
+    <img style="height: 100%; width: 100%; background-size: cover; background-position: center; display: none;"
+        id="img1"
+        src="https://t4.ftcdn.net/jpg/06/87/54/31/360_F_687543149_OstBrdY0gi1jZpLVwSgyAnEb8OxtFKuJ.jpg"
+        alt="">
+
+
+</body>
+
+</html>
+
+<script>
+
+
+    let hour = 11;
+    let stop = setInterval(() => {
+
+        hour++
+
+        document.getElementById("time1").innerHTML = hour
+        if (hour === 12) {
+            clearInterval(stop)
+            document.getElementById("time1").innerHTML = "12"
+            document.getElementById("box1").innerHTML = " "
+            document.getElementById("img1").style.display = "block"
+            
+        }
+
+    }, 10000)
+
+    document.getElementById("time1").innerHTML = hour
+
+    let min = 59;
+    let stop1 = setInterval(() => {
+
+        min++
+
+        document.getElementById("time2").innerHTML = min
+        if (min === 60) {
+            clearInterval(stop1)
+            document.getElementById("time2").innerHTML = "00"
+        }
+
+    }, 10000)
+
+    document.getElementById("time2").innerHTML = min
+
+    let sec = 50;
+    let stop2 = setInterval(() => {
+
+        sec++
+
+        document.getElementById("time3").innerHTML = sec
+        if (sec === 60) {
+            clearInterval(stop2)
+
+            document.getElementById("time3").innerHTML = "00"
+        }
+
+    }, 1000)
+
+    document.getElementById("time3").innerHTML = sec
+
+</script>
