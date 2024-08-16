@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+h1 {
+  text-align: center;
+  color: #3182ce;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.task-input input, .task-input select, .task-input button {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  outline: none;
+}
+.task-input input {
+  flex: 2;
+}
+.task-input select {
+  flex: 1;
+}
+.task-input button {
+  background-color: #38a169;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.task-input button:hover {
+  background-color: #2f855a;
+}
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.filter-container select {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+}
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+.task-item {
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: #f7fafc;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.task-item:hover {
+  background-color: #edf2f7;
+  transform: translateY(-3px);
+}
+.task-item .task-name {
+  flex: 1;
+  font-size: 1.1rem;
+}
+.task-item .priority {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #718096;
+}
+.task-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.task-actions .edit-btn {
+  background-color: #f6ad55;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.task-actions .edit-btn:hover {
+  background-color: #dd6b20;
+}
+.task-actions .delete-btn {
+  background-color: #e53e3e;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.task-actions .delete-btn:hover {
+  background-color: #c53030;
+}

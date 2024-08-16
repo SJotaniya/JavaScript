@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 40%;
+  margin: 20px auto;
+  height: 80px;
+}
+
+header input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 65%;
+  outline: none;
+  transition: all 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header input[type="text"]:focus {
+  box-shadow: 0 0 10px rgba(0, 254, 186, 0.5);
+}
+
+header button {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  color: #5b548a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header button:hover {
+  background-color: #00feba;
+  color: #333;
+}
+
+#mainDiv {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.item_div {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 350px;
+}
+
+.item_div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.item_div img {
+  width: 100%;
+  border-bottom: 3px solid #00feba;
+}
+
+.item_content {
+  padding: 20px;
+}
+
+.item_content h2 {
+  font-size: 22px;
+  color: #5b548a;
+  margin-bottom: 10px;
+}
+
+.item_content p {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 5px;
+  padding: 8px 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+}
+
+.btn-edit {
+  background-color: #F59E0B;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+.btn-update {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.btn-update:hover {
+  background-color: #007acc;
+  transform: scale(1.05);
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+.input_box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: none;
+  margin: 10px auto;
+  padding: 8px;
+  width: 100%;
+}
